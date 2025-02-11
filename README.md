@@ -20,7 +20,15 @@ This Python project calculates and visualizes the **weighted average grade** bas
   ```
 - Replace `"your_pdf_path"` with the **absolute path** to your **USOS PDF file**.
 
-### 3️⃣ Run the Script
+### 3️⃣ Install Dependencies
+
+Ensure you have **Python 3.9+** installed. Then, install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Run the Script
 
 - Execute the script using the command:
   ```bash
@@ -31,28 +39,10 @@ This Python project calculates and visualizes the **weighted average grade** bas
   - Calculate the **weighted average grade** based on the **ECTS values**.
   - Generate a **CSV file** with results and a **visual chart**.
 
-### 4️⃣ View Your Results
+### 5️⃣ View Your Results
+- It calculates the **weighted average grade** based on the **ECTS values**.
+- It generates a **CSV file**, a **graph of weighted averages per semester**, and a **GUI table** displaying the results for better visualization.
 
-- The program **sorts semesters chronologically**.
-- It displays a **graph of weighted averages** per semester.
-
-## 🔧 Installation & Setup
-
-### 1️⃣ Install Dependencies
-
-Ensure you have **Python 3.9+** installed. Then, install the required libraries:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2️⃣ Run the Program
-
-Execute the following command in the terminal:
-
-```bash
-python main.py
-```
 
 ## ⚠️ Known Issues
 
