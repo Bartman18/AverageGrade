@@ -53,7 +53,9 @@ def calculate_weighted_average(path="pdf_output.csv", csv_output="srednia_wazona
 
     if (grouped_df["ECTS"] > valid_ects).any():
         invalid_semesters = grouped_df[grouped_df["ECTS"] > valid_ects][["Semestr", "ECTS"]]
-        print(f"Check CSV for unnecessary ECTS values and try again! The following semesters have more than 30 ECTS:\n{invalid_semesters}")
+        print(f"Check CSV for unnecessary ECTS values! The following semesters have more than 30 ECTS:\n{invalid_semesters}")
+        grouped_df["Average"] = grouped_df["Result"] / grouped_df["ECTS"]
+
 
     if (grouped_df["ECTS"] < valid_ects).any():
         invalid_semesters = grouped_df[grouped_df["ECTS"] < valid_ects][["Semestr", "ECTS"]]
